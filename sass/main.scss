@@ -1,8 +1,10 @@
 @import "./utils/var";
 @import "./utils/visually-hidden";
 @import "./base/base-style";
+
 @import "./base/containier";
 @import "./base/section";
+
 @import "./components/header";
 @import "./components/logo";
 @import "./components/herobutton";
@@ -18,3 +20,4 @@
 @import "./components/email-input";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./components/mobile-menu";
