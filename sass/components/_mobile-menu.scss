@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    padding-left: 25px;
 }
 
 .mobile-menu__close{
@@ -38,6 +39,10 @@
     border: 0;
     padding: 0;
     line-height: 0;
+
+    &:hover, &:focus{
+        color: var(--accent-color);
+    }
 }
 
 .mobile-menu__close-icon{
@@ -97,25 +102,27 @@
 
 .mobile-social{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .mobile-social__network{
+    padding-right: 10px;
     font-size: 18px;
     line-height: 1.22;
     color: var(--accent-color);
-
-    &::after{
-    content: "";
-    display: block;
-    width: 1px;
-    height: 22px;
-    background-color: rgba(33, 33, 33, 0.2);
 }
 }
 
 .mobile-social__links{
     display: flex;
+
+    &:not(:last-child)::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
 }
 
 }

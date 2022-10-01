@@ -17,18 +17,6 @@
     pointer-events: none;
 }
 
-.fon {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(var(--hero-fone),
-            var(--hero-fone)),
-        url(../images/Img\ Hero.jpg);
-
-    background-position: center;
-}
-
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.9);
 }

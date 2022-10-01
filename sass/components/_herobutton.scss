@@ -1,38 +1,135 @@
 .hero {
-    padding: 200px 0;
+    padding-top: 118px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--block-color);
 }
+.fon{
+ width: 100%;
+ height: 400px;
+ margin-left: auto;
+ margin-right: auto;
+}
 
-.hero-tittle {
+.hero__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.hero__tittle {
     margin: 0 auto;
-    width: 696px;
-    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
 }
 
- .hero__button {
-     border: none;
-     border-radius: 4px;
-     padding: 10px 30px;
-     margin: 0 auto;
-     display: flex;
-     align-items: center;
-     margin-top: 40px;
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 1.87;
-     letter-spacing: 0.06em;
-     background: var(--accent-color);
-     color: var(--white-color);
-     cursor: pointer;
+.hero__button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
 
-     &.hero__button:hover, &.here__button:focus{
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-     } 
- }
+    &.hero__button:hover,
+    &.here__button:focus {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+@media screen and (max-width: 767px) {
+
+.fon {
+    max-width: 767px;
+    background-image: linear-gradient(var(--hero-fone),
+    var(--hero-fone)),
+    url(../images/mobile-images/hero-mobile.jpg);
+}
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and(min-resolution: 192dpi) and (max-width: 767px),
+screen and(min-resolution: 2dppx) and (max-width: 767px) {
+    .fon {
+        background-image: linear-gradient(var(--hero-fone),
+                var(--hero-fone)),
+            url(../images/mobile-images/hero-mobile@2x.jpg)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__tittle{
+    width: 360px;
+    }
+.fon {
+    max-width: 1199px;
+    background-image: linear-gradient(var(--hero-fone),
+    var(--hero-fone)),
+    url(../images/tablet-images/hero-tablet.jpg);
+}
+    }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and(min-resolution: 192dpi) and (min-width: 768px),
+screen and(min-resolution: 2dppx) and (min-width: 768px) {
+    .fon {
+        background-image: linear-gradient(var(--hero-fone),
+                var(--hero-fone)),
+            url(../images/tablet-images/hero-tablet@2x.jpg)
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero{
+    padding: 200px 0;
+    }
+
+    .hero__tittle{
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    }
+
+.fon {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(var(--hero-fone),
+    var(--hero-fone)),
+    url(../images/dekstop-images/dekstop-hero.jpg);
+}
+    }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and(min-resolution: 192dpi) and (min-width: 1200px),
+screen and(min-resolution: 2dppx) and (min-width: 1200px) {
+    .fon {
+        background-image: linear-gradient(var(--hero-fone),
+                var(--hero-fone)),
+            url(../images/dekstop-images/dekstop-hero@2x.jpg)
+    }
+}
+
+     
+
+
+
+
+
+
+ 
+
+ 
+
