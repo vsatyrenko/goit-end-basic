@@ -36,3 +36,24 @@
     fill: var(--accent-color);
     }
 }
+
+@media screen and(max-width:767px) {
+    .clients__section{
+        padding: 60px 0;
+    }
+    .clients__tittle{
+        margin-bottom: 30px;
+    }
+
+     .clients__list{
+        flex-wrap: wrap;
+        gap: 30px;
+        
+}
+
+     .clients__item{
+        flex-basis: calc((100% - 2 * 15px) /2 );
+        
+}
+    
+}
