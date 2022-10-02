@@ -5,11 +5,7 @@
 
 }
 
-.footer-block{
-    display: flex;
-    align-items: baseline;
-    column-gap: 70px;
-}
+
 
 .adress {
     font-style: normal; 
@@ -49,3 +45,47 @@
     }
 
 }
+
+@media screen and (max-width: 767px) {
+    .footer__block{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .adress{
+      text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .footer__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .footer__item{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .footer__block{
+    display: flex;
+    align-items: baseline;
+    column-gap: 70px;
+}
+
+.footer__content{
+    gap: 70px;
+}
+
+.footer__item{
+    margin-bottom: 0;
+}
+}
+   

@@ -11,3 +11,11 @@
 .footer-logo__part {
     color: var(--accent-color)
 }
+
+@media screen and (max-width: 767px) {
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
