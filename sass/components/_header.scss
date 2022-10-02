@@ -1,3 +1,7 @@
+.header {
+    background-color: var(--white-color);
+    border: 1px solid #ECECEC;
+}
 
 @media screen and (max-width: 767px) {
     .list-nav {
@@ -6,6 +10,10 @@
 
 .list-contact{
     display: none;
+}
+
+.portfolio__section{
+    padding: 60px 0;
 }
 
 .mobile-btn {
@@ -39,10 +47,7 @@
 .mobile-btn {
   display: none;
 }
- .header {
-    background-color: var(--white-color);
-    border: 1px solid #ECECEC;
- }
+ 
  .block-nav {
     display: flex;
     align-items: center;

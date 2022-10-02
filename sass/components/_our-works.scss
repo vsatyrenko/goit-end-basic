@@ -84,3 +84,37 @@ max-width: 370px;
     line-height: 1.87;
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 767px) {
+    .list-works {
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 1199px) {
+
+    .portfolio__section{
+        padding: 60px 0;
+    }
+
+    .list-works__link{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+.list-works{
+    margin: -15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .list-works__item{
+        width: calc((100% - 2 * 30px) /2);
+        margin: 15px;
+    }
+
+    .description{
+        flex-grow: 1;
+    }
+}

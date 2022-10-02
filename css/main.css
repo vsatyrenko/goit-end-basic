@@ -76,7 +76,7 @@ ul {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -95,12 +95,20 @@ section {
   padding: 94px 0;
 }
 
+.header {
+  background-color: var(--white-color);
+  border: 1px solid #ECECEC;
+}
+
 @media screen and (max-width: 767px) {
   .list-nav {
     display: none;
   }
   .list-contact {
     display: none;
+  }
+  .portfolio__section {
+    padding: 60px 0;
   }
   .mobile-btn {
     line-height: 0;
@@ -127,10 +135,6 @@ section {
 @media screen and (min-width: 768px) {
   .mobile-btn {
     display: none;
-  }
-  .header {
-    background-color: var(--white-color);
-    border: 1px solid #ECECEC;
   }
   .block-nav {
     display: flex;
@@ -497,6 +501,11 @@ section {
 .team__list {
   display: flex;
 }
+@media screen and (min-width: 1200px) {
+  .team__list {
+    column-gap: 30px;
+  }
+}
 
 .employee__subtitle {
   font-weight: 500;
@@ -603,8 +612,6 @@ section {
 }
 .work-filtr {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
 }
@@ -632,6 +639,18 @@ section {
   color: var(--white-color);
 }
 
+@media screen and (max-width: 767px) {
+  .work-filtr {
+    flex-wrap: wrap;
+    column-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-filtr {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .list-works {
   display: flex;
   flex-wrap: wrap;
@@ -710,6 +729,33 @@ section {
   color: var(--primary-color);
 }
 
+@media screen and (max-width: 767px) {
+  .list-works {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .portfolio__section {
+    padding: 60px 0;
+  }
+  .list-works__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .list-works {
+    margin: -15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .list-works__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  .description {
+    flex-grow: 1;
+  }
+}
 .page-footer {
   background-color: var(--block-color);
   padding-top: 60px;
@@ -719,6 +765,11 @@ section {
 .adress {
   font-style: normal;
   margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .adress {
+    text-align: center;
+  }
 }
 
 .adress__list:not(:first-child) {
@@ -748,39 +799,26 @@ section {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .footer__block {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .adress {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 768px) {
-  .footer__content {
+  .footer-content {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    justify-content: space-between;
   }
-  .footer__item {
+  .content {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__block {
+  .footer-block {
     display: flex;
     align-items: baseline;
     column-gap: 70px;
   }
-  .footer__content {
+  .footer-content {
     gap: 70px;
-  }
-  .footer__item {
-    margin-bottom: 0;
   }
 }
 .footer-logo {
@@ -854,6 +892,7 @@ section {
   .join {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -861,19 +900,26 @@ section {
     margin: 0;
   }
 }
+.email {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .email {
+    margin-left: auto;
+    text-align: start;
+  }
+  .email .email__form {
+    display: flex;
+    gap: 10px;
+  }
+}
+
 .email__sub-tittle {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
-}
-
-.email__input {
-  display: flex;
-  justify-content: center;
-  column-gap: 10px;
-  background-color: var(--block-color);
 }
 
 .email__input-text {
@@ -884,6 +930,11 @@ section {
   border-radius: 4px;
   background-color: var(--block-color);
   padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  .email__input-text {
+    width: 100%;
+  }
 }
 
 .email__send-button {
@@ -900,43 +951,20 @@ section {
   color: var(--white-color);
   cursor: pointer;
   gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-top: 20px;
 }
 .email__send-button:hover, .email__send-button:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-@media screen and (max-width: 767px) {
-  .email__send-button {
-    margin-top: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .email__sub-tittle {
-    text-align: center;
-  }
-  .email__input {
-    flex-direction: column;
-    align-items: center;
-  }
-  .email__send-button {
-    margin-top: 20px;
-  }
-  .email__input-text {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .email {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .email__input {
-    flex-direction: row;
-  }
   .email__send-button {
-    margin-top: 0;
+    margin: 0;
   }
 }
+
 .backdrop {
   position: fixed;
   top: 0;

@@ -1,7 +1,5 @@
 .work-filtr {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
 
@@ -37,4 +35,17 @@
 
 }
 
+@media screen and (max-width: 767px) {
+    .work-filtr{
+        flex-wrap: wrap;
+        column-gap: 15px;
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .work-filtr{
+    align-items: center;
+    justify-content: center;
+    }
+    
+}

@@ -22,11 +22,17 @@
       <a class="logo link" href="./index.html"><span class="logo__part">Web</span>Studio</a>
 
       <ul class="list-nav list">
-        <li><a class="list-nav__link current link" href="./index.html">Студія</a></li>
-        <li><a class="list-nav__link link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="list-nav__link link" href="./index.html">Студія</a></li>
+        <li><a class="list-nav__link current link" href="./portfolio.html">Портфоліо</a></li>
         <li><a class="list-nav__link link" href="">Контакти</a></li>
       </ul>
     </nav>
+
+    <button type="button" class="mobile-btn js-open-menu">
+      <svg class="mobile-btn__icon">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
 
   <ul class="list-contact list">
     <li>
@@ -45,9 +51,65 @@
     </li>
   </ul>
   </div>
+
+  <div class="mobile-menu js-menu-container">
+    <div class="container mobile-menu__container">
+      <button class="mobile-menu__close js-close-menu">
+        <svg class="mobile-menu__close-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-container">
+        <ul class="list">
+          <li>
+            <a class="mobile-nav current link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-nav__list">
+            <a class="mobile-nav link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__list">
+            <a class="mobile-nav link" href="">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-contact">
+        <ul class="mobile-list list">
+          <li class="mobile-list__item">
+            <a class="mobile-list__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a class="mobile-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      
+        <ul class="mobile-social list">
+          <li class="mobile-social__links">
+            <a class="mobile-social__network link" href="">Instagram</a>
+          </li>
+          <li class="mobile-social__links">
+            <a class="mobile-social__network link" href="">Twitter</a>
+          </li>
+          <li class="mobile-social__links">
+            <a class="mobile-social__network link" href="">Facebook</a>
+          </li>
+          <li class="mobile-social__links">
+            <a class="mobile-social__network link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      
+      
+      </div>
+      </div>
+      </div>
+
 </header>
   <main>
-    <section class="portfolio section">
+
+<!--Кнопки портфоліо-->  
+
+    <section class="portfolio section portfolio__section">
       <div class="container">
         <h1 class="visually-hidden">Портфоліо</h1>
 
@@ -73,7 +135,26 @@
           <li class="list-works__item">
             <a  class="list-works__link link" href="">
               <div class="block-overlay">
-                <img src="./images/img.jpg" alt="На екрані ноута люди" width="370" />
+                <picture>
+                  <source srcset="./images/dekstop-works/img-1wp.webp 1x, ./images/dekstop-works/img-1@2xwp.webp 2x"
+                    media="(min-width: 1200px" 
+                    type="images/dekstop-works/webp"/>
+                  <source srcset="./images/dekstop-works/img-1.jpg 1x, ./images/dekstop-works/img-1@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source srcset="./images/tablet-works/img-1wp.webp 1x, ./images/tablet-works/img-1@2xwp.webp 2x"
+                    media="(max-width: 1199px" 
+                    type="images/tablet-works/webp"/>
+                  <source srcset="./images/tablet-works/img-1.jpg 1x, ./images/tablet-works/img-1@2x.jpg 2x" 
+                  media="(max-width: 1199px" />
+                  <source srcset="./images/mobile/img-1wp.webp 1x, ./images/mobile/img-1@2xwp.webp 2x"
+                    media="(max-width: 767px" 
+                    type="images/mobile-works/webp"/>
+                  <source srcset="./images/mobile-works/img-1.jpg 1x, ./images/mobile-works/img-1@2x.jpg 2x" 
+                  media="(max-width: 767px" />
+                
+                
+                  <img src="./images/mobile-works/img-1.jpg" alt="На екрані ноута люди"/>
+                </picture>
                 <p class="block-overlay_discription">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
@@ -91,7 +172,25 @@
           <li class="list-works__item">
             <a class="list-works__link link" href="">
               <div class="block-overlay">
-              <img src="./images/img-1.jpg" alt="Блокування баскетболіста в прижку" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-2wp.webp 1x, ./images/dekstop-works/img-2@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-work/webp"/>
+                <source srcset="./images/dekstop-works/img-2.jpg 1x, ./images/dekstop-works/img-2@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-2wp.webp 1x, ./images/tablet-works/img-2@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-work/webp"/>
+                <source srcset="./images/tablet-works/img-2.jpg 1x, ./images/tablet-works/img-2@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-1wp.webp 2x, ./images/mobile/img-2@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-work/webp"/>
+                <source srcset="./images/mobile-works/img-2.jpg 1x, ./images/mobile-works/img-2@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-2.jpg" alt="Блокування баскетболіста в прижку" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -108,7 +207,25 @@
           <li class="list-works__item">
             <a  class="list-works__link link" href="">
               <div class="block-overlay">
-                <img src="./images/img-2.jpg" alt="Лого ресторану" width="370" />
+                <picture>
+                  <source srcset="./images/dekstop-works/img-3wp.webp 1x, ./images/dekstop-works/img-3@2xwp.webp 2x"
+                    media="(min-width: 1200px" 
+                    type="images/dekstop-works/webp"/>
+                  <source srcset="./images/dekstop-works/img-3.jpg 1x, ./images/dekstop-works/img-3@2x.jpg 2x"
+                    media="(min-width: 1200px" />
+                  <source srcset="./images/tablet-works/img-3wp.webp 1x, ./images/tablet-works/img-3@2xwp.webp 2x"
+                    media="(max-width: 1199px" 
+                    type="images/tablet-works/webp"/>
+                  <source srcset="./images/tablet-works/img-3.jpg 1x, ./images/tablet-works/img-3@2x.jpg 2x"
+                    media="(max-width: 1199px" />
+                  <source srcset="./images/mobile/img-3wp.webp 1x, ./images/mobile/img-3@2xwp.webp 2x" 
+                  media="(max-width: 767px" 
+                  type="images/mobile-works/webp"/>
+                  <source srcset="./images/mobile-works/img-3.jpg 1x, ./images/mobile-works/img-3@2x.jpg 2x"
+                    media="(max-width: 767px"/>
+                
+                
+                  <img src="./images/mobile-works/img-1.jpg" alt="Лого ресторану" width="370" />
                 <p class="block-overlay_discription">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
@@ -125,7 +242,25 @@
           <li class="list-works__item">
             <a class="list-works__link link" href="">
               <div class="block-overlay">
-              <img src="./images/img-3.jpg" alt="Навушники" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-4wp.webp 1x, ./images/dekstop-works/img-4@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-works/webp"/>
+                <source srcset="./images/dekstop-works/img-4.jpg 1x, ./images/dekstop-works/img-4@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-4wp.webp 1x, ./images/tablet-works/img-4@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-works/webp"/>
+                <source srcset="./images/tablet-works/img-4.jpg 1x, ./images/tablet-works/img-4@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-1wp.webp 4x, ./images/mobile/img-4@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-works/webp"/>
+                <source srcset="./images/mobile-works/img-4.jpg 1x, ./images/mobile-works/img-4@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-1.jpg" alt="Навушники" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -142,7 +277,25 @@
         <li class="list-works__item">
           <a class="list-works__link link" href="">
             <div class="block-overlay">
-              <img src="./images/img-4.jpg" alt="Маленькі коробчки для перфумів" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-5wp.webp 1x, ./images/dekstop-works/img-5@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-works/webp"/>
+                <source srcset="./images/dekstop-works/img-5.jpg 1x, ./images/dekstop-works/img-5@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-5wp.webp 1x, ./images/tablet-works/img-5@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-works/webp"/>
+                <source srcset="./images/tablet-works/img-5.jpg 1x, ./images/tablet-works/img-5@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-5wp.webp 1x, ./images/mobile/img-5@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-works/webp"/>
+                <source srcset="./images/mobile-works/img-5.jpg 1x, ./images/mobile-works/img-5@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-1.jpg" alt="Маленькі коробчки для перфумів" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -159,7 +312,25 @@
         <li class="list-works__item">
           <a class="list-works__link link" href="">
             <div class="block-overlay">
-              <img src="./images/img-5.jpg" alt="Монітор комп'ютера" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-6wp.webp 1x, ./images/dekstop-works/img-6@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-works/webp"/>
+                <source srcset="./images/dekstop-works/img-6.jpg 1x, ./images/dekstop-works/img-6@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-6wp.webp 1x, ./images/tablet-works/img-6@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-works/webp"/>
+                <source srcset="./images/tablet-works/img-6.jpg 1x, ./images/tablet-works/img-6@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-1wp.webp 6x, ./images/mobile/img-6@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-works/webp"/>
+                <source srcset="./images/mobile-works/img-6.jpg 1x, ./images/mobile-works/img-6@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-1.jpg" alt="Монітор комп'ютера" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -176,7 +347,25 @@
         <li class="list-works__item">
           <a class="list-works__link link" href="">
             <div class="block-overlay">
-              <img src="./images/img-6.jpg" alt="Розгорнутий журнал" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-7wp.webp 1x, ./images/dekstop-works/img-7@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-works/webp"/>
+                <source srcset="./images/dekstop-works/img-7.jpg 1x, ./images/dekstop-works/img-7@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-7wp.webp 1x, ./images/tablet-works/img-7@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-works/webp"/>
+                <source srcset="./images/tablet-works/img-7.jpg 1x, ./images/tablet-works/img-7@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-7wp.webp 1x, ./images/mobile/img-7@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-works/webp"/>
+                <source srcset="./images/mobile-works/img-7.jpg 1x, ./images/mobile-works/img-7@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-1.jpg" alt="Розгорнутий журнал" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -193,7 +382,25 @@
         <li class="list-works__item">
           <a class="list-works__link link" href="">
             <div class="block-overlay">
-              <img src="./images/img-7.jpg" alt="Брелок" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-8wp.webp 1x, ./images/dekstop-works/img-8@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-works/webp"/>
+                <source srcset="./images/dekstop-works/img-8.jpg 1x, ./images/dekstop-works/img-8@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-8wp.webp 1x, ./images/tablet-works/img-8@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-works/webp"/>
+                <source srcset="./images/tablet-works/img-8.jpg 1x, ./images/tablet-works/img-8@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-8wp.webp 1x, ./images/mobile/img-8@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-works/webp"/>
+                <source srcset="./images/mobile-works/img-8.jpg 1x, ./images/mobile-works/img-8@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-1.jpg" alt="Брелок" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -210,7 +417,25 @@
         <li class="list-works__item">
           <a class="list-works__link link" href="">
             <div class="block-overlay">
-              <img src="./images/img-8.jpg" alt="Праця на ноутбуку" width="370" />
+              <picture>
+                <source srcset="./images/dekstop-works/img-9wp.webp 1x, ./images/dekstop-works/img-9@2xwp.webp 2x"
+                  media="(min-width: 1200px" 
+                  type="images/dekstop-works/webp"/>
+                <source srcset="./images/dekstop-works/img-9.jpg 1x, ./images/dekstop-works/img-9@2x.jpg 2x"
+                  media="(min-width: 1200px" />
+                <source srcset="./images/tablet-works/img-9wp.webp 1x, ./images/tablet-works/img-9@2xwp.webp 2x"
+                  media="(max-width: 1199px" 
+                  type="images/tablet-works/webp"/>
+                <source srcset="./images/tablet-works/img-9.jpg 1x, ./images/tablet-works/img-9@2x.jpg 2x"
+                  media="(max-width: 1199px" />
+                <source srcset="./images/mobile/img-1wp.webp 9x, ./images/mobile/img-9@2xwp.webp 2x" 
+                media="(max-width: 767px" 
+                type="images/mobile-works/webp"/>
+                <source srcset="./images/mobile-works/img-9.jpg 1x, ./images/mobile-works/img-9@2x.jpg 2x"
+                  media="(max-width: 767px" />
+              
+              
+                <img src="./images/mobile-works/img-1.jpg" alt="Праця на ноутбуку" width="370" />
               <p class="block-overlay_discription">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.
@@ -230,9 +455,9 @@
 
   <!--footer-->
 <footer class="page-footer">
-  <div class="container footer__block">
-    <div class="footer__content">
-      <div class="footer__item">
+  <div class="container footer-block">
+    <div class="footer-content">
+      <div class="content">
         <a class="footer-logo link" href="./index.html"><span class="footer-logo__part">Web</span>Studio</a>
         <ul class="adress list">
           <li class="adress__list">
@@ -288,10 +513,10 @@
       </div>
     </div>
 
-    <div class="email">
+    <form class="email">
       <p class="email__sub-tittle">Підпишіться на розсилку</p>
 
-      <form class="email__input">
+      <div class="email__form">
         <label>
           <input type="text" name="e-mail" class="email__input-text" placeholder="Email" />
         </label>
@@ -301,10 +526,12 @@
             <use href="./images/icons.svg#icon-send"></use>
           </svg>
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
+  </div>
   </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

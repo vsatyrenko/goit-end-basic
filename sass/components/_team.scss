@@ -63,7 +63,10 @@
 
 .team__list {
     display: flex;
-    //column-gap: 30px;
+    @media screen and (min-width: 1200px) {
+        column-gap: 30px;
+    }
+    //
 }
 
 
