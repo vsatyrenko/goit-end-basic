@@ -66,7 +66,7 @@ screen and(min-resolution: 2dppx) and (max-width: 767px) {
     .fon {
         background-image: linear-gradient(var(--hero-fone),
                 var(--hero-fone)),
-            url(../images/mobile-images/hero-mobile@2x.jpg)
+            url(../images/mobile-images/hero-mobile@2x.jpg);
     }
 }
 
@@ -88,7 +88,7 @@ screen and(min-resolution: 2dppx) and (min-width: 768px) {
     .fon {
         background-image: linear-gradient(var(--hero-fone),
                 var(--hero-fone)),
-            url(../images/tablet-images/hero-tablet@2x.jpg)
+            url(../images/tablet-images/hero-tablet@2x.jpg);
     }
 }
 
@@ -118,7 +118,7 @@ screen and(min-resolution: 2dppx) and (min-width: 1200px) {
     .fon {
         background-image: linear-gradient(var(--hero-fone),
                 var(--hero-fone)),
-            url(../images/dekstop-images/dekstop-hero@2x.jpg)
+            url(../images/dekstop-images/dekstop-hero@2x.jpg);
     }
 }
 
