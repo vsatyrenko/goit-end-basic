@@ -1,15 +1,32 @@
 .modal {
 position: absolute;
-top: 50%;
 left: 50%;
 padding: 40px;
-width: 528px;
-min-height: 581px;
+
+
 background-color: rgba(255, 255, 255, 1);
-transform: translate(-50%, -50%) scale(1);
+
 transition: transform var(--timing-fuction);
 
+@media screen and (max-width: 767px) {
+      top: 0;
+      transform: translate(-50%, 0%) scale(1);
+      width: 90%;
+    }
+
+    @media screen and (min-width: 767px) {
+      top: 0;
+      transform: translate(-50%, 0%) scale(1);
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 50%;
+    width: 528px;
+    transform: translate(-50%, -50%) scale(1);
+    }
 }
+    
+
 
 .modal__button-close{
 display: flex;
@@ -121,6 +138,12 @@ textarea {
     line-height: 1.7;
     gap: 10px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
 }
 
 .policy-label__check-mark{
