@@ -54,7 +54,7 @@
 @media screen and (max-width: 767px) {
 
 .fon {
-    max-width: 767px;
+    max-width: 480px;
     background-image: linear-gradient(var(--hero-fone),
     var(--hero-fone)),
     url(../images/mobile-images/hero-mobile.jpg);
@@ -75,7 +75,7 @@ screen and(min-resolution: 2dppx) and (max-width: 767px) {
     width: 360px;
     }
 .fon {
-    max-width: 1199px;
+    max-width: 768px;
     background-image: linear-gradient(var(--hero-fone),
     var(--hero-fone)),
     url(../images/tablet-images/hero-tablet.jpg);

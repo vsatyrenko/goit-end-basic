@@ -62,7 +62,7 @@ max-width: 370px;
     color: var(--white-color);
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform var(--timing-fuction);
-    transform: translateY(100%);
+    transform: translateY(101%);
 
     &:hover, &:focus{
     transform: translateY(0%);
@@ -78,6 +78,10 @@ max-width: 370px;
     background: var(--white-color);
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
+    border-top: none;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-color);
 }
 
 
@@ -90,16 +94,8 @@ max-width: 370px;
 }
 
 .description__text {
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-color);
-}
-
-
-.description {
-    border-top: none;
-    font-size: 16px;
-    line-height: 1.87;
     color: var(--primary-color);
 }
 

@@ -150,61 +150,37 @@ section {
     align-items: center;
     gap: 50px;
   }
-  .list-nav .list-nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
-    transition: color var(--timing-fuction);
-  }
-  .list-nav .list-nav__link.current {
-    color: var(--accent-color);
-    position: relative;
-  }
-  .list-nav .list-nav__link.current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-bottom: -18px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-  }
-  .list-nav .list-nav__link:hover, .list-nav .list-nav__link:focus {
-    color: var(--accent-color);
-  }
-  .list-contact {
-    margin-left: auto;
-  }
-  .list-contact__item {
-    padding-top: 10px;
-  }
-  .list-cotact__link {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-color);
-    transition: color var(--timing-fuction);
-  }
-  .list-cotact__link:hover, .list-cotact__link:focus {
-    color: var(--accent-color);
-  }
-  .icon-envelope,
+}
+.list-contact {
+  margin-left: auto;
+}
+
+.list-contact__item {
+  padding-top: 10px;
+}
+
+.list-cotact__link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  transition: color var(--timing-fuction);
+}
+.list-cotact__link:hover, .list-cotact__link:focus {
+  color: var(--accent-color);
+}
+
+.icon-envelope,
 .icon-smartphone {
-    fill: currentColor;
-    margin-right: 10px;
-  }
-  .icon-envelope:hover, .icon-envelope:focus,
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-envelope:hover, .icon-envelope:focus,
 .icon-smartphone:hover,
 .icon-smartphone:focus {
-    fill: var(--accent-color);
-  }
+  fill: var(--accent-color);
 }
+
 @media screen and (min-width: 1200px) {
   .list-contact {
     display: flex;
@@ -221,7 +197,45 @@ section {
   .list-contact__item {
     padding: 0;
   }
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
+.list-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  transition: color var(--timing-fuction);
+}
+.list-nav__link.current {
+  color: var(--accent-color);
+  position: relative;
+}
+.list-nav__link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -18px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .list-nav__link.current::after {
+    margin-bottom: -1px;
+  }
+}
+.list-nav__link:hover, .list-nav__link:focus {
+  color: var(--accent-color);
+}
+
 .logo {
   color: var(--logo-color);
   font-family: "Raleway", sans-serif;
@@ -290,7 +304,7 @@ section {
 
 @media screen and (max-width: 767px) {
   .fon {
-    max-width: 767px;
+    max-width: 480px;
     background-image: linear-gradient(var(--hero-fone), var(--hero-fone)), url(../images/mobile-images/hero-mobile.jpg);
   }
 }
@@ -304,7 +318,7 @@ section {
     width: 360px;
   }
   .fon {
-    max-width: 1199px;
+    max-width: 768px;
     background-image: linear-gradient(var(--hero-fone), var(--hero-fone)), url(../images/tablet-images/hero-tablet.jpg);
   }
 }
@@ -702,7 +716,7 @@ section {
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--timing-fuction);
-  transform: translateY(100%);
+  transform: translateY(101%);
 }
 .block-overlay_discription:hover, .block-overlay_discription:focus {
   transform: translateY(0%);
@@ -717,6 +731,10 @@ section {
   background: var(--white-color);
   border: 1px solid #EEEEEE;
   padding: 20px 24px;
+  border-top: none;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-color);
 }
 
 .description__subtitle {
@@ -728,15 +746,8 @@ section {
 }
 
 .description__text {
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
-}
-
-.description {
-  border-top: none;
-  font-size: 16px;
-  line-height: 1.87;
   color: var(--primary-color);
 }
 
@@ -841,6 +852,9 @@ section {
   }
   .footer-content {
     gap: 70px;
+  }
+  .content {
+    text-align: start;
   }
 }
 .footer-logo {
@@ -1027,6 +1041,7 @@ section {
     top: 0;
     transform: translate(-50%, 0%) scale(1);
     width: 90%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 767px) {

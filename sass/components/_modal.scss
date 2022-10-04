@@ -12,6 +12,7 @@ transition: transform var(--timing-fuction);
       top: 0;
       transform: translate(-50%, 0%) scale(1);
       width: 90%;
+      max-width: 450px;
     }
 
     @media screen and (min-width: 767px) {
